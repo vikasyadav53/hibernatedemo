@@ -30,5 +30,11 @@
 			class="com.vikas.hibernate.example.chapter4.recipe0.AudioDisc3" />
 		<mapping
 			class="com.vikas.hibernate.example.chapter4.recipe0.VideoDisc3" />
+		<mapping
+			class="com.vikas.hibernate.example.chapter4.recipe0.Disc4" />
+		<mapping
+			class="com.vikas.hibernate.example.chapter4.recipe0.AudioDisc4" />
+		<mapping
+			class="com.vikas.hibernate.example.chapter4.recipe0.VideoDisc4" />
 	</session-factory>
 </hibernate-configuration>

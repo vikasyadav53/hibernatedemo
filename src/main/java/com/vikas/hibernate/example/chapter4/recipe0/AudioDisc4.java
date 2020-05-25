@@ -7,7 +7,7 @@ import lombok.EqualsAndHashCode;
 
 @EqualsAndHashCode
 @Entity
-public class AudioDisc4 extends Disc{
+public class AudioDisc4 extends Disc4{
 	@Column
 	int trackCount;
 	@Column

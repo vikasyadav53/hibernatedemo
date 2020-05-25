@@ -145,5 +145,46 @@ public class QueryExecutableClass_tab_per_class {
 		tx.commit();
 		session.close();
 	}
+	
+	public void test4() {
+		Session session = SessionManager.getSessionFactory().openSession();
+	    Transaction tx = session.beginTransaction();
+
+	    VideoDisc4 videoDisc = new VideoDisc4();
+	    videoDisc.setName("Blazing Saddles");
+	    videoDisc.setPrice(1499);
+	    videoDisc.setDirector("Mel Brooks");
+	    videoDisc.setLanguage("english");
+	    session.save(videoDisc);
+
+	    AudioDisc4 audioDisc = new AudioDisc4();
+	    audioDisc.setName("Grace Under Pressure");
+	    audioDisc.setPrice(999);
+	    audioDisc.setArtist("Rush");
+	    audioDisc.setTrackCount(8);
+	    session.save(audioDisc);
+
+	    tx.commit();
+	    session.close();
+
+	    session = SessionManager.getSessionFactory().openSession();
+	    session.setDefaultReadOnly(true);
+	    tx = session.beginTransaction();
+
+	    VideoDisc4 videoDisc2 = (VideoDisc4) session.load(VideoDisc4.class, videoDisc.getId());
+
+	    tx.commit();
+	    session.close();
+	    
+	    session=SessionManager.getSessionFactory().openSession();
+	    session.setDefaultReadOnly(true);
+	    tx=session.beginTransaction();
+	    Query query=session.createQuery("from VideoDisc4 d where d.price>:price");
+	    query.setParameter("price", 1299);
+	    List<Disc4> results=query.list();
+	    tx.commit();
+	    session.close();
+	    
+	}
 
 }

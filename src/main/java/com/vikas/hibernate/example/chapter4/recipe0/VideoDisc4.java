@@ -7,7 +7,7 @@ import lombok.EqualsAndHashCode;
 
 @EqualsAndHashCode
 @Entity
-public class VideoDisc4 extends Disc{
+public class VideoDisc4 extends Disc4{
 	
 	@Column
 	String director;

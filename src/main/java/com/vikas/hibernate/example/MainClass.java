@@ -37,8 +37,11 @@ public class MainClass {
 		/*QueryExecutableClass_tab_per_class queryExecutableClass_tab_per_class = new QueryExecutableClass_tab_per_class();
 		queryExecutableClass_tab_per_class.test2();*/
 		
+		/*QueryExecutableClass_tab_per_class queryExecutableClass_tab_per_class = new QueryExecutableClass_tab_per_class();
+		queryExecutableClass_tab_per_class.test3();*/
+		
 		QueryExecutableClass_tab_per_class queryExecutableClass_tab_per_class = new QueryExecutableClass_tab_per_class();
-		queryExecutableClass_tab_per_class.test3();
+		queryExecutableClass_tab_per_class.test4();
 
 	}
 
