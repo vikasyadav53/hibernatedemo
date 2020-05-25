@@ -1,8 +1,7 @@
 package com.vikas.hibernate.example;
 
 
-import com.vikas.hibernate.example.chapter4.recipe0.QueryExecutableClass_tab_per_class;
-import com.vikas.hibernate.example.chapter5.recipe0.QueryExecutableClass_many_one_to_one;
+import com.vikas.hibernate.example.chapter7.recipe0.QueryExecutableClass_many_one_to_many;
 
 public class MainClass {
 
@@ -53,8 +52,17 @@ public class MainClass {
 		/*QueryExecutableClass_many_one_to_one queryExecutableClass_many_one_to_one = new QueryExecutableClass_many_one_to_one();
 		queryExecutableClass_many_one_to_one.testOneToOne();*/
 		
-		QueryExecutableClass_many_one_to_one queryExecutableClass_many_one_to_one = new QueryExecutableClass_many_one_to_one();
-		queryExecutableClass_many_one_to_one.testOnetoOneJoin();
+		/*QueryExecutableClass_many_one_to_one queryExecutableClass_many_one_to_one = new QueryExecutableClass_many_one_to_one();
+		queryExecutableClass_many_one_to_one.testOnetoOneJoin();*/
+		
+		/*
+		 * QueryExecutableClass_many_one_to_many queryExecutableClass_many_one_to_many =
+		 * new QueryExecutableClass_many_one_to_many();
+		 * queryExecutableClass_many_one_to_many.unidirectionalOneToMany();
+		 */
+		
+		QueryExecutableClass_many_one_to_many queryExecutableClass_many_one_to_many = new QueryExecutableClass_many_one_to_many();
+		queryExecutableClass_many_one_to_many.bidirectionalOneToMany();
 
 	}
 
