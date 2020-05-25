@@ -14,7 +14,7 @@ public class SessionManager {
 
 	private static SessionFactory buildSessionFactory() {
 		try {
-			Configuration config = new Configuration().configure("hibernate_ch3.cfg.xml");
+			Configuration config = new Configuration().configure("hibernate_ch4.cfg.xml");
 			ServiceRegistry serviceReg = new StandardServiceRegistryBuilder().applySettings(config.getProperties())
 					.build();
 			return config.buildSessionFactory(serviceReg);

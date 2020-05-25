@@ -1,8 +1,7 @@
 package com.vikas.hibernate.example;
 
 
-import com.vikas.hibernate.example.chapter3.recipe1.QueryExecutableClass_Component_XML;
-import com.vikas.hibernate.example.chapter3.recipe2.QueryExecutableClass_Component_Collection;
+import com.vikas.hibernate.example.chapter4.recipe0.QueryExecutableClass_tab_per_class;
 
 public class MainClass {
 
@@ -29,8 +28,11 @@ public class MainClass {
 		/*QueryExecutableClass_Component_XML queryExecutableClass_Component_XML = new QueryExecutableClass_Component_XML();
 		queryExecutableClass_Component_XML.test();*/
 		
-		QueryExecutableClass_Component_Collection queryExecutableClass_Component_Collection = new QueryExecutableClass_Component_Collection();
-		queryExecutableClass_Component_Collection.test();
+		/*QueryExecutableClass_Component_Collection queryExecutableClass_Component_Collection = new QueryExecutableClass_Component_Collection();
+		queryExecutableClass_Component_Collection.test();*/
+		
+		QueryExecutableClass_tab_per_class queryExecutableClass_tab_per_class = new QueryExecutableClass_tab_per_class();
+		queryExecutableClass_tab_per_class.test();
 
 	}
 

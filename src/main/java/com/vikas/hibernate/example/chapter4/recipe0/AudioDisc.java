@@ -1,11 +1,13 @@
 package com.vikas.hibernate.example.chapter4.recipe0;
 
 import javax.persistence.Column;
+import javax.persistence.Entity;
 
 import lombok.EqualsAndHashCode;
 
 @EqualsAndHashCode
-public class AudioDisc {
+@Entity
+public class AudioDisc extends Disc{
 	@Column
 	int trackCount;
 	@Column
