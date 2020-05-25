@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.vikas.hibernate.example.chapter3.recipe1">
+	<class name="Orders" table="ORDERS">
+		<id name="id" type="long" column ="ID">
+			<generator class="native"></generator>
+		</id>
+		<component name="weekdayContact" class="Contact">
+			<property name="recipient" type="string" column="WEEKDAY_RECIPIENT"></property>
+			<property name="phone" type="string" column="WEEKDAY_PHONE"></property>
+			<property name="address" type="string" column="WEEKDAY_ADDRESS"></property>
+		</component>
+		<component name="holidayContact" class="Contact">
+			<property name="recipient" type="string" column="HOLIDAY_RECIPIENT"></property>
+			<property name="phone" type="string" column="HOLIDAY_PHONE"></property>
+			<property name="address" type="string" column="HOLIDAY_ADDRESS"></property>
+		</component>
+	</class>
+
+</hibernate-mapping>
