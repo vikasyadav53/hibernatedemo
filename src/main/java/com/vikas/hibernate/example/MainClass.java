@@ -31,8 +31,14 @@ public class MainClass {
 		/*QueryExecutableClass_Component_Collection queryExecutableClass_Component_Collection = new QueryExecutableClass_Component_Collection();
 		queryExecutableClass_Component_Collection.test();*/
 		
+		/*QueryExecutableClass_tab_per_class queryExecutableClass_tab_per_class = new QueryExecutableClass_tab_per_class();
+		queryExecutableClass_tab_per_class.test();*/
+		
+		/*QueryExecutableClass_tab_per_class queryExecutableClass_tab_per_class = new QueryExecutableClass_tab_per_class();
+		queryExecutableClass_tab_per_class.test2();*/
+		
 		QueryExecutableClass_tab_per_class queryExecutableClass_tab_per_class = new QueryExecutableClass_tab_per_class();
-		queryExecutableClass_tab_per_class.test();
+		queryExecutableClass_tab_per_class.test3();
 
 	}
 
