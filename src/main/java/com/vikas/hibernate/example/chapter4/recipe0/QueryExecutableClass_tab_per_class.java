@@ -146,7 +146,7 @@ public class QueryExecutableClass_tab_per_class {
 		session.close();
 	}
 	
-	public void test4() {
+	public void test4() {// table per class with mapped superclass
 		Session session = SessionManager.getSessionFactory().openSession();
 	    Transaction tx = session.beginTransaction();
 
