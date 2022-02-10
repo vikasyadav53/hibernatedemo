@@ -10,7 +10,7 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<version.hibernate>4.3.5.Final</version.hibernate>
+		<version.hibernate>5.4.24.Final</version.hibernate>
 		<version.testng>6.8.7</version.testng>
 		<version.lombok>1.14.2</version.lombok>
 		<version.slf4j>1.7.7</version.slf4j>
